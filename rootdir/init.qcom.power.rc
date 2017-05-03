@@ -66,6 +66,18 @@ on enable-low-power
     # Enable low power modes
     write /sys/module/lpm_levels/parameters/sleep_disabled 0
 
+    # Core control
+    write /sys/devices/system/cpu/cpu0/core_ctl/max_cpus 8
+    write /sys/devices/system/cpu/cpu0/core_ctl/min_cpus 2
+    write /sys/devices/system/cpu/cpu0/core_ctl/busy_up_thres 75
+    write /sys/devices/system/cpu/cpu0/core_ctl/busy_down_thres 55
+    write /sys/devices/system/cpu/cpu0/core_ctl/offline_delay_ms 100
+    # write /sys/devices/system/cpu/cpu0/core_ctl/is_big_cluster 1
+    write /sys/devices/system/cpu/cpu0/core_ctl/not_preferred "1 1 0 0 0 0 0 0"
+
+    #GPU scheduler
+    write /sys/class/kgsl/kgsl-3d0/devfreq/governor "simple_ondemand"
+
     # SMP scheduler
     write /proc/sys/kernel/sched_upmigrate 100
     write /proc/sys/kernel/sched_downmigrate 100
@@ -92,4 +104,4 @@ on property:init.svc.recovery=running
     trigger enable-low-power
 
 on property:dev.bootcomplete=1
-    setprop sys.io.scheduler bfq
+    setprop sys.io.scheduler row
