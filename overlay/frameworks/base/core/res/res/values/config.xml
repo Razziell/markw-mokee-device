@@ -454,7 +454,7 @@
     <integer name="config_autoBrightnessBrighteningLightFastDebounce">600</integer>
     <integer name="config_autoBrightnessBrighteningLightDebounce">3500</integer>
     <integer name="config_autoBrightnessDarkeningLightDebounce">6000</integer>
-    <integer name="config_autoBrightnessLightSensorRate">300</integer>
+    <integer name="config_autoBrightnessLightSensorRate">100</integer>
     <integer name="config_autoBrightnessAmbientLightHorizon">9000</integer>
 
     <!-- Vibrator pattern for feedback about a long screen/key press -->

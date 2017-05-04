@@ -14,8 +14,7 @@
      See the License for the specific language governing permissions and
      limitations under the License.
 -->
-<resources xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <!--String arrays for World preferred netwrok modes -->
     <string-array name="preferred_network_mode_choices_world_mode">
         <item>@string/preferred_network_mode_lte_wcdma_choice</item>

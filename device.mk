@@ -82,12 +82,15 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     audiod \
     audio.a2dp.default \
+    audio.primary.msm8953 \
     audio.r_submix.default \
     audio.usb.default \
     libaudio-resampler \
+    libaudioroute \
     libqcomvisualizer \
     libqcomvoiceprocessing \
     libqcompostprocbundle \
+    libtinycompress \
     tinymix
 
 # Audio configuration
@@ -123,7 +126,6 @@ PRODUCT_PACKAGES += \
     copybit.msm8953 \
     hwcomposer.msm8953 \
     memtrack.msm8953 \
-    liboverlay \
     libtinyxml
 
 # Livedisplay
@@ -223,8 +225,10 @@ PRODUCT_PACKAGES += \
     libOmxCore \
     libOmxEvrcEnc \
     libOmxQcelp13Enc \
+    libOmxSwVencHevc \
     libOmxVdec \
     libOmxVenc \
+    libOmxVidcCommon \
     libstagefrighthw
 
 # Power

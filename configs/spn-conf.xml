@@ -1245,7 +1245,7 @@
   <spnOverride numeric="25001"  spn="MTS" />
   <spnOverride numeric="25003"  spn="NCC" />
   <spnOverride numeric="25016"  spn="NTC" />
-  <spnOverride numeric="25011"  spn="Orensot" />
+  <spnOverride numeric="25011"  spn="Yota" />
   <spnOverride numeric="25092"  spn="Primtelefon" />
   <spnOverride numeric="25004"  spn="Sibchallenge" />
   <spnOverride numeric="25006"  spn="Skylink" />
