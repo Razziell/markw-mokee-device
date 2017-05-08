@@ -67,7 +67,7 @@ on enable-low-power
     write /sys/module/lpm_levels/parameters/sleep_disabled 0
 
     #GPU scheduler
-    write /sys/class/kgsl/kgsl-3d0/devfreq/governor "simple_ondemand"
+    write /sys/class/kgsl/kgsl-3d0/devfreq/governor "msm-adreno-tz"
 
     # SMP scheduler
     write /proc/sys/kernel/sched_upmigrate 100
