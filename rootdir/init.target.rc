@@ -65,6 +65,24 @@ on post-fs-data
     chmod 0644 /sys/class/timed_output/vibrator/vtg_max
     chmod 0644 /sys/class/timed_output/vibrator/vtg_min
 
+# Advanced color control for Qualcomm
+    chown system system /sys/devices/platform/kcal_ctrl.0/kcalkcalkcal
+    chown system system /sys/devices/platform/kcal_ctrl.0/kcalkcalkcal_min
+    chown system system /sys/devices/platform/kcal_ctrl.0/kcalkcalkcal_enable
+    chown system system /sys/devices/platform/kcal_ctrl.0/kcalkcalkcal_invert
+    chown system system /sys/devices/platform/kcal_ctrl.0/kcalkcalkcal_sat
+    chown system system /sys/devices/platform/kcal_ctrl.0/kcalkcalkcal_hue
+    chown system system /sys/devices/platform/kcal_ctrl.0/kcalkcalkcal_val
+    chown system system /sys/devices/platform/kcal_ctrl.0/kcalkcalkcal_cont
+    chmod 0644 /sys/devices/platform/kcal_ctrl.0/kcalkcal
+    chmod 0644 /sys/devices/platform/kcal_ctrl.0/kcalkcal_min
+    chmod 0644 /sys/devices/platform/kcal_ctrl.0/kcalkcal_enable
+    chmod 0644 /sys/devices/platform/kcal_ctrl.0/kcalkcal_invert
+    chmod 0644 /sys/devices/platform/kcal_ctrl.0/kcalkcal_sat
+    chmod 0644 /sys/devices/platform/kcal_ctrl.0/kcalkcal_hue
+    chmod 0644 /sys/devices/platform/kcal_ctrl.0/kcalkcal_val
+    chmod 0644 /sys/devices/platform/kcal_ctrl.0/kcalkcal_cont
+
 # Start camera server as daemon
 service qcamerasvr /system/bin/mm-qcamera-daemon
     class late_start
