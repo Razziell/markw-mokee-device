@@ -30,8 +30,8 @@ on enable-low-power
     write /proc/sys/kernel/sched_restrict_cluster_spill 1
 
     # Input boost configuration
-    write /sys/module/cpu_boost/parameters/input_boost_freq "1401600"
-    write /sys/module/cpu_boost/parameters/input_boost_ms 40
+    write /sys/module/cpu_boost/parameters/input_boost_freq "1036800"
+    write /sys/module/cpu_boost/parameters/input_boost_ms 50
 
     write /sys/class/devfreq/qcom,mincpubw/governor "cpufreq"
 
