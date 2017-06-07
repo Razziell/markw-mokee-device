@@ -65,7 +65,6 @@ BOARD_KERNEL_CMDLINE += androidboot.selinux=permissive
 BOARD_KERNEL_PAGESIZE :=  2048
 BOARD_MKBOOTIMG_ARGS := --ramdisk_offset 0x01000000 --tags_offset 0x00000100
 TARGET_KERNEL_CONFIG := new_mokee_markw_defconfig
-#TARGET_KERNEL_SOURCE := kernel/xiaomi/NK
 TARGET_KERNEL_SOURCE := kernel/xiaomi/android_kernel_xiaomi_msm8953
 BOARD_KERNEL_IMAGE_NAME := Image.gz-dtb
 TARGET_KERNEL_APPEND_DTB := true
