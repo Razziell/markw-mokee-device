@@ -453,12 +453,6 @@ on property:persist.debug.trace=1
     mkdir /data/core 0777 root root
     write /proc/sys/kernel/core_pattern "/data/core/%E.%p.%e"
 
-#bug156417 zhaoqf_sh add Allow usb charging to be disabled peristently
-on property:persist.sys.chgdisabled=1
-    write /sys/class/power_supply/battery/charging_enabled 0
-on property:persist.sys.chgdisabled=0
-    write /sys/class/power_supply/battery/charging_enabled 1
-
 on property:init.svc.wpa_supplicant=stopped
     stop dhcpcd
 
@@ -754,7 +748,7 @@ service wifi_ftmd /system/bin/wifi_ftmd
     oneshot
 
 on property:wifi.ftmd.load=true
-    insmod /system/lib/modules/pronto/pronto_wlan.ko con_mode=5
+#    insmod /system/lib/modules/pronto/pronto_wlan.ko con_mode=5
 
 service cnss-daemon /system/bin/cnss-daemon -n -l
     class late_start

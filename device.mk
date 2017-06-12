@@ -308,4 +308,4 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/wifi/WCNSS_qcom_cfg.ini:system/etc/wifi/WCNSS_qcom_cfg.ini
 
 PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
-persist.sys.usb.config=mtp,adb
+persist.sys.usb.config=mtp

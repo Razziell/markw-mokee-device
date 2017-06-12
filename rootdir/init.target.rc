@@ -99,11 +99,11 @@ service qfp-daemon /system/bin/qfp-daemon
    group system drmrpc
 
 # Allow usb charging to be disabled peristently
-on property:persist.usb.chgdisabled=1
-    write /sys/class/power_supply/battery/charging_enabled 0
-
-on property:persist.usb.chgdisabled=0
-    write /sys/class/power_supply/battery/charging_enabled 1
+#on property:persist.usb.chgdisabled=1
+#    write /sys/class/power_supply/battery/charging_enabled 0
+#
+#on property:persist.usb.chgdisabled=0
+#    write /sys/class/power_supply/battery/charging_enabled 1
 
 service qrngd /system/bin/qrngd -f
    class main
@@ -235,9 +235,9 @@ on charger
     mount ext4 /dev/block/bootdevice/by-name/system /system ro barrier=1
     load_all_props
     setprop sys.usb.configfs 0
-    setprop persist.sys.usb.config charging
+    setprop persist.sys.usb.config mass_storage
     start qcom-post-boot
-    setprop persist.sys.usb.config charging
+    setprop persist.sys.usb.config mass_storage
     start hvdcp_opti
 
 service adsprpcd /system/bin/adsprpcd
