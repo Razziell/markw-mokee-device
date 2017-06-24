@@ -18,7 +18,12 @@
     <string-array name="preferred_network_mode_choices_cm" translatable="false">
         <item>@string/preferred_network_mode_lte_wcdma_choice</item>
         <item>@string/preferred_network_mode_lte_choice</item>
-        <item>@string/preferred_network_mode_gsm_wcdma_lte_choice</item>        
+        <item>@string/preferred_network_mode_gsm_wcdma_lte_choice</item>
+	<item>@string/preferred_network_mode_cdma_lte_evdo_choice</item>
+        <item>@string/preferred_network_mode_cdma_evdo_gsm_wcdma_choice</item>
+        <item>@string/preferred_network_mode_evdo_only_choice</item>
+        <item>@string/preferred_network_mode_cdma_wo_evdo_choice</item>
+        <item>@string/preferred_network_mode_cdma_evdo_auto_choice</item>        
         <item>@string/preferred_network_mode_gsm_wcdma_auto_choice</item>
         <item>@string/preferred_network_mode_wcdma_only_choice</item>
         <item>@string/preferred_network_mode_gsm_only_choice</item>

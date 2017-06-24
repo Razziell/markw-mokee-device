@@ -201,7 +201,7 @@ on boot
     # Goodix Fingerprint
     chown system system /dev/goodix_fp
     chmod 0644 /dev/goodix_fp        
-    chmod 07777 /system/bin/gx_fpd    
+    chmod 0777 /system/bin/gx_fpd    
 
     setprop persist.sys.fp.vendor none
     start gx_fpd
