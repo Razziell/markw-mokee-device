@@ -91,6 +91,7 @@ PRODUCT_PACKAGES += \
     libqcomvoiceprocessing \
     libqcompostprocbundle \
     libtinycompress \
+    libvolumelistener \
     tinymix
 
 # Audio configuration
@@ -141,6 +142,14 @@ PRODUCT_PACKAGES += \
 # Busybox
 PRODUCT_PACKAGES += \
     busybox
+
+# DASH technology and QCMediaPlayer
+PRODUCT_PACKAGES += \
+    libdashplayer \
+    qcmediaplayer
+ 	
+PRODUCT_BOOT_JARS += \
+    qcmediaplayer
 
 # DPM
 PRODUCT_BOOT_JARS += \
