@@ -97,7 +97,6 @@ PRODUCT_PACKAGES += \
 # Audio configuration
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/audio/aanc_tuning_mixer.txt:system/etc/aanc_tuning_mixer.txt \
-    $(LOCAL_PATH)/audio/audio_effects.conf:system/etc/audio_effects.conf \
     $(LOCAL_PATH)/audio/audio_platform_info_extcodec.xml:system/etc/audio_platform_info_extcodec.xml \
     $(LOCAL_PATH)/audio/audio_platform_info.xml:system/etc/audio_platform_info.xml \
     $(LOCAL_PATH)/audio/audio_policy.conf:system/etc/audio_policy.conf \
@@ -143,13 +142,9 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     busybox
 
-# DASH technology and QCMediaPlayer
+# DASH technology
 PRODUCT_PACKAGES += \
-    libdashplayer \
-    qcmediaplayer
- 	
-PRODUCT_BOOT_JARS += \
-    qcmediaplayer
+    libdashplayer
 
 # DPM
 PRODUCT_BOOT_JARS += \
@@ -230,7 +225,6 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     libmm-omxcore \
     libc2dcolorconvert \
-    libextmedia_jni \
     libOmxAacEnc \
     libOmxAmrEnc \
     libOmxCore \
@@ -239,7 +233,6 @@ PRODUCT_PACKAGES += \
     libOmxSwVencHevc \
     libOmxVdec \
     libOmxVenc \
-    libOmxVidcCommon \
     libstagefrighthw
 
 # Power

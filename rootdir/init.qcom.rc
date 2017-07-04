@@ -926,7 +926,7 @@ on charger
     setprop persist.sys.usb.config charging
 
 service fingerprintd /system/bin/fingerprintd
-    class late_start
+    class core
     socket fpce stream 0666 system system
     user  system
     group system sdcard_rw
