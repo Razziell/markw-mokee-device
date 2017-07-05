@@ -4,3 +4,4 @@ allow untrusted_app zygote:file { read };
 allow untrusted_app zygote:file { open };
 allow untrusted_app device:dir { read };
 allow untrusted_app device:dir { open };
+allow untrusted_app anr_data_file:dir { read open };
