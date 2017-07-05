@@ -1,5 +1,4 @@
-allow init init:netlink_socket { read };
-allow init tee_device:chr_file { write };
-allow init tee_device:chr_file { ioctl };
-allow init fingerprintd:binder { call };
-allow init fingerprintd:netlink_socket { read };
+allow init init:netlink_socket read;
+allow init tee_device:chr_file { write ioctl };
+allow init fingerprintd:binder call;
+allow init fingerprintd:netlink_socket read;
