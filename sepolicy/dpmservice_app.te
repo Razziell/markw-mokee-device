@@ -1,0 +1,2 @@
+allow dpmservice_app untrusted_app:file { read getattr };
+allow dpmservice_app platform_app:file { read getattr };
