@@ -87,3 +87,5 @@ allow untrusted_app ipacm_exec:file { read open };
 allow untrusted_app ipacm-diag_exec:file { read open };
 allow untrusted_app irsc_util_exec:file { read open };
 allow untrusted_app keystore_exec:file read;
+allow untrusted_app bootchart_data_file:dir { read open };
+allow untrusted_app sensors_data_file:dir { read open };
